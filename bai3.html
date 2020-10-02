@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let fang = true
+
+    function isPrime(number) {
+        if (number < 2) {
+            fang = false;
+        } else {
+            for (let i = 2; i < number; i++) {
+                if (number % i === 0) {
+                    fang = false;
+                    break;
+                }
+            }
+        }
+        if (fang === true) {
+            document.write(number + " , true")
+        } else {
+            document.write(number + " , false")
+        }
+    }
+    isPrime(prompt("Nhap So Cua ban"));
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    let x = +prompt("Nhap So Cua Ban")
+    let arr = [23, 33, 43, 53, 63, 73, 83, 83, 93, 103];
+
+    function tryRemoveFromArray(arr, x) {
+        for (let i = arr.length - 1; i >= 0; i--) {
+            if (x === arr[i]) {
+                arr.splice(i, 1)
+                break;
+            }
+        }
+    }
+
+    tryRemoveFromArray(arr, x);
+    console.log(arr);
+</script>
+</body>
+</html>
